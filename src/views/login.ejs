@@ -1,0 +1,22 @@
+<%- include('partials/header', { pageTitle: "Sign Up", loggedIn: true }) %>
+
+  <main>
+    <h1>Login to your account</h1>
+    <form action="/login" method="POST">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Log In</button>
+    </form>
+
+    <hr/>
+
+    <h2>Create Account</h2>
+    <form action="/signup" method="POST">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">
+      <button type="submit">Create Account</button>
+    </form>
+  </main>
+
+
+<%- include('partials/footer') %>
